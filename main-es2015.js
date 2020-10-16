@@ -23,168 +23,446 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/index.js!./src/app/app.component.html":
-/*!**************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/app.component.html ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html":
+/*!**************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "<app-main-layout></app-main-layout>"
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/app/common/top-navigation-bar/top-navigation-bar.component.html":
-/*!*******************************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/common/top-navigation-bar/top-navigation-bar.component.html ***!
-  \*******************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<p>top-navigation-bar works!</p>\n"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<app-main-layout></app-main-layout>");
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/index.js!./src/app/modules/dashboard/dashboard/dashboard.component.html":
-/*!************************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/modules/dashboard/dashboard/dashboard.component.html ***!
-  \************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/common/top-navigation-bar/top-navigation-bar.component.html":
+/*!*******************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/common/top-navigation-bar/top-navigation-bar.component.html ***!
+  \*******************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "\n<mat-grid-list cols=\"11\" rowHeight=\"100px\">\n    <mat-grid-tile\n        [colspan]=\"11\"\n        [rowspan]=\"1\"\n        [style.background]=\"white\">\n    </mat-grid-tile>\n    \n    <mat-grid-tile\n        [colspan]=\"2\"\n        [rowspan]=\"2\"\n        [style.background]=\"white\">\n    </mat-grid-tile>\n    <mat-grid-tile\n        [colspan]=\"7\"\n        [rowspan]=\"2\"\n        [style.background]=\"white\">\n        <app-portfolio-summary></app-portfolio-summary>\n    </mat-grid-tile>\n    <mat-grid-tile\n        [colspan]=\"2\"\n        [rowspan]=\"2\"\n        [style.background]=\"red\">\n    </mat-grid-tile>\n\n    <mat-grid-tile\n        [colspan]=\"2\"\n        [rowspan]=\"2\"\n        [style.background]=\"white\">\n    </mat-grid-tile>\n    <mat-grid-tile\n        [colspan]=\"7\"\n        [rowspan]=\"2\"\n        [style.background]=\"white\">\n        <app-transactions-summary></app-transactions-summary>\n    </mat-grid-tile>\n    <mat-grid-tile\n        [colspan]=\"2\"\n        [rowspan]=\"2\"\n        [style.background]=\"red\">\n    </mat-grid-tile>\n\n    \n  </mat-grid-list>\n\n"
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/app/modules/dashboard/portfolio-summary/portfolio-summary.component.html":
-/*!****************************************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/modules/dashboard/portfolio-summary/portfolio-summary.component.html ***!
-  \****************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<mat-card>\n    <mat-grid-list cols=\"6\" rowHeight=\"30px\">\n        <mat-grid-tile\n            [colspan]=\"6\"\n            [rowspan]=\"1\"\n            [style.background]=\"white\">\n            Your total balance is {{accountsTotal |currency: '₹' :symbol :0}}\n        </mat-grid-tile>\n        <mat-grid-tile\n            [colspan]=\"2\"\n            [rowspan]=\"1\"\n            [style.background]=\"white\">\n            Savings {{savingsTotal |currency: '₹' :symbol :0}}\n        </mat-grid-tile>\n        <mat-grid-tile\n            [colspan]=\"2\"\n            [rowspan]=\"1\"\n            [style.background]=\"white\">\n            Deposits {{depositsTotal |currency: '₹' :symbol :0}}\n        </mat-grid-tile>\n        <mat-grid-tile\n            [colspan]=\"2\"\n            [rowspan]=\"1\"\n            [style.background]=\"white\">\n            Pending Loans {{totalLoanAmountPending |currency: '₹' :symbol :0}}\n        </mat-grid-tile>\n      </mat-grid-list>\n</mat-card>"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<p>top-navigation-bar works!</p>\n");
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/index.js!./src/app/modules/dashboard/transactions-summary/transactions-summary.component.html":
-/*!**********************************************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/modules/dashboard/transactions-summary/transactions-summary.component.html ***!
-  \**********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"example-container mat-elevation-z8\">\n    <div class=\"example-loading-shade\"\n         *ngIf=\"isLoadingResults || isRateLimitReached\">\n      <mat-spinner *ngIf=\"isLoadingResults\"></mat-spinner>\n      <div class=\"example-rate-limit-reached\" *ngIf=\"isRateLimitReached\">\n        GitHub's API rate limit has been reached. It will be reset in one minute.\n      </div>\n    </div>\n  \n    <div class=\"example-table-container\">\n  \n      <table mat-table [dataSource]=\"data\" class=\"example-table\"\n             matSort matSortActive=\"created\" matSortDisableClear matSortDirection=\"desc\">\n        <!-- Number Column -->\n        <ng-container matColumnDef=\"number\">\n          <th mat-header-cell *matHeaderCellDef>#</th>\n          <td mat-cell *matCellDef=\"let row\">{{row.number}}</td>\n        </ng-container>\n  \n        <!-- Title Column -->\n        <ng-container matColumnDef=\"title\">\n          <th mat-header-cell *matHeaderCellDef>Title</th>\n          <td mat-cell *matCellDef=\"let row\">{{row.title}}</td>\n        </ng-container>\n  \n        <!-- State Column -->\n        <ng-container matColumnDef=\"state\">\n          <th mat-header-cell *matHeaderCellDef>State</th>\n          <td mat-cell *matCellDef=\"let row\">{{row.state}}</td>\n        </ng-container>\n  \n        <!-- Created Column -->\n        <ng-container matColumnDef=\"created\">\n          <th mat-header-cell *matHeaderCellDef mat-sort-header disableClear>\n            Created\n          </th>\n          <td mat-cell *matCellDef=\"let row\">{{row.created_at | date}}</td>\n        </ng-container>\n  \n        <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n        <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n      </table>\n    </div>\n  \n    <mat-paginator [length]=\"resultsLength\" [pageSize]=\"30\"></mat-paginator>\n  </div>\n"
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/app/modules/login/login-form/login-form.component.html":
-/*!**********************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/modules/login/login-form/login-form.component.html ***!
-  \**********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<mat-card class=\"login-card\">\n    <form (ngSubmit)=\"login(loginForm)\" #loginForm=\"ngForm\" class=\"login-form\">\n        <div class=\"login-form\">\n           <mat-form-field class=\"full-width\">\n             <input \n             placeholder=\"Username\" \n             name=\"username\"\n             type=\"text\"\n             ngModel \n             matInput\n             required>\n           </mat-form-field>\n           <mat-form-field class=\"full-width\">\n              <input \n              placeholder=\"password\" \n              name=\"password\"\n              type=\"password\"\n              ngModel \n              matInput\n              required>\n            </mat-form-field>\n           \n         </div>\n         <button \n         mat-raised-button \n         class=\"create-article-save\" \n         [disabled]=\"loginForm.invalid\"\n         [color]=\"'primary'\" \n         type=\"submit\"\n         > Login</button>\n         <button mat-raised-button class=\"create-article-clear\" [color]=\"'warn'\" type=\"reset\"> Clear!</button>\n       </form>\n</mat-card>\n\n   "
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/app/modules/login/logout/logout.component.html":
-/*!**************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/modules/login/logout/logout.component.html ***!
-  \**************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n"
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/app/modules/welcome/welcome-component/welcome-component.component.html":
-/*!**************************************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/modules/welcome/welcome-component/welcome-component.component.html ***!
-  \**************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<mat-grid-list cols=\"11\" rowHeight=\"100px\">\n    <mat-grid-tile\n        [colspan]=\"11\"\n        [rowspan]=\"1\"\n        >\n    </mat-grid-tile>\n    <mat-grid-tile\n        [colspan]=\"2\"\n        [rowspan]=\"2\"\n        >\n        <p>This is a welcome component. We will use this page to display the following</p>\n            <ul>\n                <li>Latest updates</li>\n                <li>Information of our products</li>\n                <li>onboarding options</li>\n            </ul>\n    </mat-grid-tile>\n    <mat-grid-tile\n        [colspan]=\"5\"\n        [rowspan]=\"2\"\n        >\n        \n    </mat-grid-tile>\n    <mat-grid-tile\n        [colspan]=\"3\"\n        [rowspan]=\"2\"\n        >\n        <app-login-form></app-login-form>\n    </mat-grid-tile>\n    <mat-grid-tile\n        [colspan]=\"1\"\n        [rowspan]=\"2\"\n        >\n    </mat-grid-tile>\n  </mat-grid-list>"
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/app/page-layouts/pre-login/pre-login.component.html":
-/*!*******************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/page-layouts/pre-login/pre-login.component.html ***!
-  \*******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<app-top-navigation-bar></app-top-navigation-bar>\n<p>pre-login works!</p>\n"
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/app/theme/confirmation-dialogue/confirmation-dialogue.component.html":
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/dashboard/dashboard/dashboard.component.html":
 /*!************************************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/theme/confirmation-dialogue/confirmation-dialogue.component.html ***!
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/modules/dashboard/dashboard/dashboard.component.html ***!
   \************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "<div class=\"dialogue\">\n  <p>\n    {{data.message}}\n  </p>\n  <span *ngFor=\"let button of data.buttons;let i=index\">\n    <button   mat-button mat-flat-button  color=\"{{button.color}}\" (click)=\"buttonClicked(i)\" class=\"button-class\">{{button.text}}</button>\n  </span>\n  <span *ngFor=\"let buttonText of data.closeButtons\">\n    <button   mat-button mat-flat-button  color=\"warn\" (click)=\"onCloseClick()\" class=\"button-class\">{{buttonText}}</button>\n  </span>\n</div>\n\n"
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/app/theme/expandable-list/expandable-list.component.html":
-/*!************************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/theme/expandable-list/expandable-list.component.html ***!
-  \************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<!-- <table>\n  <tr>\n    <th *ngFor=\"let column of columnsToDisplay\">{{column}}</th>\n  </tr>\n  <tr *ngFor=\"let data of listDataSource\">\n    <td *ngFor=\"let column of columnsToDisplay\">{{data[column]}}</td>\n  </tr>\n</table> -->\n<table mat-table [dataSource]=\"listData\" multiTemplateDataRows class=\"mat-elevation-z8\">\n  \n      <ng-container matColumnDef=\"{{column}}\" *ngFor=\"let column of listColumns\">\n\n          <th mat-header-cell *matHeaderCellDef> {{column}} </th>\n          <td mat-cell *matCellDef=\"let detailRow\"> {{detailRow[column]}} </td>\n        </ng-container>\n  \n  \n\n  <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->\n  <ng-container matColumnDef=\"expandedDetail\">\n    <td mat-cell *matCellDef=\"let row\" [attr.colspan]=\"columnsToDisplayInDetails.length\">\n      <div class=\"user-details\" [@detailExpand]=\"row == expandedRow ? 'expanded' : 'collapsed'\">\n\n        <table class=\"user-details-table\">\n          <tr class=\"user-details-row\" *ngFor=\"let column of columnsToDisplayInDetails\">\n            <th class=\"user-details-header\"><b>{{column}}</b></th>\n            <td class=\"user-details-details\">{{row[column]}}</td>\n          </tr>\n        </table>\n      </div>\n    </td>\n  </ng-container>\n\n  <tr mat-header-row *matHeaderRowDef=\"listColumns\"></tr>\n  <tr mat-row *matRowDef=\"let row; columns: listColumns;\" class=\"user-details-row\"\n    [class.user-details-expanded-row]=\"expandedRow === row\" (click)=\"toggleExpandedRow(row)\">\n  </tr>\n  <tr mat-row *matRowDef=\"let row; columns: ['expandedDetail']\" class=\"user-detail-row\"></tr>\n</table>\n<mat-paginator [length]=\"totalNumberOfItems\"\n              [pageSize]=\"pageSize\"\n              [pageIndex]=\"pageNumber\"\n              [pageSizeOptions]=\"[5, 10, 25, 100]\"\n              (page)=\"getPaginatedItems($event)\">\n</mat-paginator>"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n<mat-grid-list cols=\"11\" rowHeight=\"100px\">\n    <mat-grid-tile\n        [colspan]=\"11\"\n        [rowspan]=\"1\"\n        [style.background]=\"white\">\n    </mat-grid-tile>\n    \n    <mat-grid-tile\n        [colspan]=\"2\"\n        [rowspan]=\"2\"\n        [style.background]=\"white\">\n    </mat-grid-tile>\n    <mat-grid-tile\n        [colspan]=\"7\"\n        [rowspan]=\"2\"\n        [style.background]=\"white\">\n        <app-portfolio-summary></app-portfolio-summary>\n    </mat-grid-tile>\n    <mat-grid-tile\n        [colspan]=\"2\"\n        [rowspan]=\"2\"\n        [style.background]=\"red\">\n    </mat-grid-tile>\n\n    <mat-grid-tile\n        [colspan]=\"2\"\n        [rowspan]=\"2\"\n        [style.background]=\"white\">\n    </mat-grid-tile>\n    <mat-grid-tile\n        [colspan]=\"7\"\n        [rowspan]=\"2\"\n        [style.background]=\"white\">\n        <app-transactions-summary></app-transactions-summary>\n    </mat-grid-tile>\n    <mat-grid-tile\n        [colspan]=\"2\"\n        [rowspan]=\"2\"\n        [style.background]=\"red\">\n    </mat-grid-tile>\n\n    \n  </mat-grid-list>\n\n");
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/index.js!./src/app/theme/footer-bar/footer-bar.component.html":
-/*!**************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/theme/footer-bar/footer-bar.component.html ***!
-  \**************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/dashboard/portfolio-summary/portfolio-summary.component.html":
+/*!****************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/modules/dashboard/portfolio-summary/portfolio-summary.component.html ***!
+  \****************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "<footer>\n  <mat-toolbar>  \n    <mat-toolbar-row>\n      <mat-icon>copyright</mat-icon> Mohit Kanwar\n    </mat-toolbar-row>\n  </mat-toolbar>\n</footer>\n"
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/app/theme/main-layout/main-layout.component.html":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/theme/main-layout/main-layout.component.html ***!
-  \****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<app-top-fixed-bar></app-top-fixed-bar>\n<app-notification></app-notification>\n<div class=\"mainContent\">\n    <router-outlet></router-outlet>\n</div>\n<app-footer-bar></app-footer-bar>"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-card>\n    <mat-grid-list cols=\"6\" rowHeight=\"30px\">\n        <mat-grid-tile\n            [colspan]=\"6\"\n            [rowspan]=\"1\"\n            [style.background]=\"white\">\n            Your total balance is {{accountsTotal |currency: '₹' :symbol :0}}\n        </mat-grid-tile>\n        <mat-grid-tile\n            [colspan]=\"2\"\n            [rowspan]=\"1\"\n            [style.background]=\"white\">\n            Savings {{savingsTotal |currency: '₹' :symbol :0}}\n        </mat-grid-tile>\n        <mat-grid-tile\n            [colspan]=\"2\"\n            [rowspan]=\"1\"\n            [style.background]=\"white\">\n            Deposits {{depositsTotal |currency: '₹' :symbol :0}}\n        </mat-grid-tile>\n        <mat-grid-tile\n            [colspan]=\"2\"\n            [rowspan]=\"1\"\n            [style.background]=\"white\">\n            Pending Loans {{totalLoanAmountPending |currency: '₹' :symbol :0}}\n        </mat-grid-tile>\n      </mat-grid-list>\n</mat-card>");
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/index.js!./src/app/theme/notification/notification.component.html":
-/*!******************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/theme/notification/notification.component.html ***!
-  \******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/dashboard/transactions-summary/transactions-summary.component.html":
+/*!**********************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/modules/dashboard/transactions-summary/transactions-summary.component.html ***!
+  \**********************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = ""
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example-container mat-elevation-z8\">\n    <div class=\"example-loading-shade\"\n         *ngIf=\"isLoadingResults || isRateLimitReached\">\n      <mat-spinner *ngIf=\"isLoadingResults\"></mat-spinner>\n      <div class=\"example-rate-limit-reached\" *ngIf=\"isRateLimitReached\">\n        GitHub's API rate limit has been reached. It will be reset in one minute.\n      </div>\n    </div>\n  \n    <div class=\"example-table-container\">\n  \n      <table mat-table [dataSource]=\"data\" class=\"example-table\"\n             matSort matSortActive=\"created\" matSortDisableClear matSortDirection=\"desc\">\n        <!-- Number Column -->\n        <ng-container matColumnDef=\"number\">\n          <th mat-header-cell *matHeaderCellDef>#</th>\n          <td mat-cell *matCellDef=\"let row\">{{row.number}}</td>\n        </ng-container>\n  \n        <!-- Title Column -->\n        <ng-container matColumnDef=\"title\">\n          <th mat-header-cell *matHeaderCellDef>Title</th>\n          <td mat-cell *matCellDef=\"let row\">{{row.title}}</td>\n        </ng-container>\n  \n        <!-- State Column -->\n        <ng-container matColumnDef=\"state\">\n          <th mat-header-cell *matHeaderCellDef>State</th>\n          <td mat-cell *matCellDef=\"let row\">{{row.state}}</td>\n        </ng-container>\n  \n        <!-- Created Column -->\n        <ng-container matColumnDef=\"created\">\n          <th mat-header-cell *matHeaderCellDef mat-sort-header disableClear>\n            Created\n          </th>\n          <td mat-cell *matCellDef=\"let row\">{{row.created_at | date}}</td>\n        </ng-container>\n  \n        <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n        <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n      </table>\n    </div>\n  \n    <mat-paginator [length]=\"resultsLength\" [pageSize]=\"30\"></mat-paginator>\n  </div>\n");
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/index.js!./src/app/theme/top-fixed-bar/top-fixed-bar.component.html":
-/*!********************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/theme/top-fixed-bar/top-fixed-bar.component.html ***!
-  \********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/login/login-form/login-form.component.html":
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/modules/login/login-form/login-form.component.html ***!
+  \**********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "<mat-toolbar class=\"primary\">  \n  <mat-toolbar-row>\n      \n    <span class=\"menuItem\">XBank!</span>\n    <span class=\"menuItem\"></span>\n    <span *ngIf=\"!isAuthenticated()\">\n      <a routerLink=\"/\" routerLinkActive=\"active\" class=\"menuItem primary\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon class=\"primary\">home</mat-icon><span>Home</span></button></a>\n      <a routerLink=\"/\" routerLinkActive=\"active\" class=\"menuItem primary\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon class=\"primary\">person</mat-icon><span>Retail</span></button></a>\n      <a routerLink=\"/\" routerLinkActive=\"active\" class=\"menuItem primary\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon class=\"primary\">business_center</mat-icon><span>Corporate</span></button></a>\n      <a routerLink=\"/\" routerLinkActive=\"active\" class=\"menuItem primary\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon class=\"primary\">show_chart</mat-icon><span>Investment</span></button></a>  \n    </span>\n    <span *ngIf=\"isAuthenticated()\">\n      <a routerLink=\"/dashboard\" routerLinkActive=\"active\" class=\"menuItem primary\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon class=\"primary\">home</mat-icon><span>Home</span></button></a>\n      <a routerLink=\"/\" routerLinkActive=\"active\" class=\"menuItem primary\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon class=\"primary\">person</mat-icon><span>My Accounts</span></button></a>\n      <a routerLink=\"/\" routerLinkActive=\"active\" class=\"menuItem primary\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon class=\"primary\">business_center</mat-icon><span>Transactions</span></button></a>\n      <a routerLink=\"/\" routerLinkActive=\"active\" class=\"menuItem primary\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon class=\"primary\">show_chart</mat-icon><span>Investments</span></button></a>  \n      <a routerLink=\"/logout\" routerLinkActive=\"active\" class=\"menuItem primary last\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon>face</mat-icon><span>Logout</span></button></a>      \n    </span>\n    \n  </mat-toolbar-row>\n\n</mat-toolbar>"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-card class=\"login-card\">\n    <form (ngSubmit)=\"login(loginForm)\" #loginForm=\"ngForm\" class=\"login-form\">\n        <div class=\"login-form\">\n           <mat-form-field class=\"full-width\">\n             <input \n             placeholder=\"Username\" \n             name=\"username\"\n             type=\"text\"\n             ngModel \n             matInput\n             required>\n           </mat-form-field>\n           <mat-form-field class=\"full-width\">\n              <input \n              placeholder=\"password\" \n              name=\"password\"\n              type=\"password\"\n              ngModel \n              matInput\n              required>\n            </mat-form-field>\n           \n         </div>\n         <button \n         mat-raised-button \n         class=\"create-article-save\" \n         [disabled]=\"loginForm.invalid\"\n         [color]=\"'primary'\" \n         type=\"submit\"\n         > Login</button>\n         <button mat-raised-button class=\"create-article-clear\" [color]=\"'warn'\" type=\"reset\"> Clear!</button>\n       </form>\n</mat-card>\n\n   ");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/login/logout/logout.component.html":
+/*!**************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/modules/login/logout/logout.component.html ***!
+  \**************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/welcome/welcome-component/welcome-component.component.html":
+/*!**************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/modules/welcome/welcome-component/welcome-component.component.html ***!
+  \**************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-grid-list cols=\"11\" rowHeight=\"100px\">\n    <mat-grid-tile\n        [colspan]=\"11\"\n        [rowspan]=\"1\"\n        >\n    </mat-grid-tile>\n    <mat-grid-tile\n        [colspan]=\"2\"\n        [rowspan]=\"2\"\n        >\n        <p>This is a welcome component. We will use this page to display the following</p>\n            <ul>\n                <li>Latest updates</li>\n                <li>Information of our products</li>\n                <li>onboarding options</li>\n            </ul>\n    </mat-grid-tile>\n    <mat-grid-tile\n        [colspan]=\"5\"\n        [rowspan]=\"2\"\n        >\n        \n    </mat-grid-tile>\n    <mat-grid-tile\n        [colspan]=\"3\"\n        [rowspan]=\"2\"\n        >\n        <app-login-form></app-login-form>\n    </mat-grid-tile>\n    <mat-grid-tile\n        [colspan]=\"1\"\n        [rowspan]=\"2\"\n        >\n    </mat-grid-tile>\n  </mat-grid-list>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/page-layouts/pre-login/pre-login.component.html":
+/*!*******************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/page-layouts/pre-login/pre-login.component.html ***!
+  \*******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<app-top-navigation-bar></app-top-navigation-bar>\n<p>pre-login works!</p>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/theme/confirmation-dialogue/confirmation-dialogue.component.html":
+/*!************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/theme/confirmation-dialogue/confirmation-dialogue.component.html ***!
+  \************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"dialogue\">\n  <p>\n    {{data.message}}\n  </p>\n  <span *ngFor=\"let button of data.buttons;let i=index\">\n    <button   mat-button mat-flat-button  color=\"{{button.color}}\" (click)=\"buttonClicked(i)\" class=\"button-class\">{{button.text}}</button>\n  </span>\n  <span *ngFor=\"let buttonText of data.closeButtons\">\n    <button   mat-button mat-flat-button  color=\"warn\" (click)=\"onCloseClick()\" class=\"button-class\">{{buttonText}}</button>\n  </span>\n</div>\n\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/theme/expandable-list/expandable-list.component.html":
+/*!************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/theme/expandable-list/expandable-list.component.html ***!
+  \************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- <table>\n  <tr>\n    <th *ngFor=\"let column of columnsToDisplay\">{{column}}</th>\n  </tr>\n  <tr *ngFor=\"let data of listDataSource\">\n    <td *ngFor=\"let column of columnsToDisplay\">{{data[column]}}</td>\n  </tr>\n</table> -->\n<table mat-table [dataSource]=\"listData\" multiTemplateDataRows class=\"mat-elevation-z8\">\n  \n      <ng-container matColumnDef=\"{{column}}\" *ngFor=\"let column of listColumns\">\n\n          <th mat-header-cell *matHeaderCellDef> {{column}} </th>\n          <td mat-cell *matCellDef=\"let detailRow\"> {{detailRow[column]}} </td>\n        </ng-container>\n  \n  \n\n  <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->\n  <ng-container matColumnDef=\"expandedDetail\">\n    <td mat-cell *matCellDef=\"let row\" [attr.colspan]=\"columnsToDisplayInDetails.length\">\n      <div class=\"user-details\" [@detailExpand]=\"row == expandedRow ? 'expanded' : 'collapsed'\">\n\n        <table class=\"user-details-table\">\n          <tr class=\"user-details-row\" *ngFor=\"let column of columnsToDisplayInDetails\">\n            <th class=\"user-details-header\"><b>{{column}}</b></th>\n            <td class=\"user-details-details\">{{row[column]}}</td>\n          </tr>\n        </table>\n      </div>\n    </td>\n  </ng-container>\n\n  <tr mat-header-row *matHeaderRowDef=\"listColumns\"></tr>\n  <tr mat-row *matRowDef=\"let row; columns: listColumns;\" class=\"user-details-row\"\n    [class.user-details-expanded-row]=\"expandedRow === row\" (click)=\"toggleExpandedRow(row)\">\n  </tr>\n  <tr mat-row *matRowDef=\"let row; columns: ['expandedDetail']\" class=\"user-detail-row\"></tr>\n</table>\n<mat-paginator [length]=\"totalNumberOfItems\"\n              [pageSize]=\"pageSize\"\n              [pageIndex]=\"pageNumber\"\n              [pageSizeOptions]=\"[5, 10, 25, 100]\"\n              (page)=\"getPaginatedItems($event)\">\n</mat-paginator>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/theme/footer-bar/footer-bar.component.html":
+/*!**************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/theme/footer-bar/footer-bar.component.html ***!
+  \**************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<footer>\n  <mat-toolbar>  \n    <mat-toolbar-row>\n      <mat-icon>copyright</mat-icon> Mohit Kanwar\n    </mat-toolbar-row>\n  </mat-toolbar>\n</footer>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/theme/main-layout/main-layout.component.html":
+/*!****************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/theme/main-layout/main-layout.component.html ***!
+  \****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<app-top-fixed-bar></app-top-fixed-bar>\n<app-notification></app-notification>\n<div class=\"mainContent\">\n    <router-outlet></router-outlet>\n</div>\n<app-footer-bar></app-footer-bar>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/theme/notification/notification.component.html":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/theme/notification/notification.component.html ***!
+  \******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/theme/top-fixed-bar/top-fixed-bar.component.html":
+/*!********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/theme/top-fixed-bar/top-fixed-bar.component.html ***!
+  \********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-toolbar class=\"primary\">  \n  <mat-toolbar-row>\n      \n    <span class=\"menuItem\">XBank!</span>\n    <span class=\"menuItem\"></span>\n    <span *ngIf=\"!isAuthenticated()\">\n      <a routerLink=\"/\" routerLinkActive=\"active\" class=\"menuItem primary\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon class=\"primary\">home</mat-icon><span>Home</span></button></a>\n      <a routerLink=\"/\" routerLinkActive=\"active\" class=\"menuItem primary\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon class=\"primary\">person</mat-icon><span>Retail</span></button></a>\n      <a routerLink=\"/\" routerLinkActive=\"active\" class=\"menuItem primary\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon class=\"primary\">business_center</mat-icon><span>Corporate</span></button></a>\n      <a routerLink=\"/\" routerLinkActive=\"active\" class=\"menuItem primary\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon class=\"primary\">show_chart</mat-icon><span>Investment</span></button></a>  \n    </span>\n    <span *ngIf=\"isAuthenticated()\">\n      <a routerLink=\"/dashboard\" routerLinkActive=\"active\" class=\"menuItem primary\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon class=\"primary\">home</mat-icon><span>Home</span></button></a>\n      <a routerLink=\"/\" routerLinkActive=\"active\" class=\"menuItem primary\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon class=\"primary\">person</mat-icon><span>My Accounts</span></button></a>\n      <a routerLink=\"/\" routerLinkActive=\"active\" class=\"menuItem primary\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon class=\"primary\">business_center</mat-icon><span>Transactions</span></button></a>\n      <a routerLink=\"/\" routerLinkActive=\"active\" class=\"menuItem primary\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon class=\"primary\">show_chart</mat-icon><span>Investments</span></button></a>  \n      <a routerLink=\"/logout\" routerLinkActive=\"active\" class=\"menuItem primary last\"><button   mat-button mat-flat-button class=\"primary\"><mat-icon>face</mat-icon><span>Logout</span></button></a>      \n    </span>\n    \n  </mat-toolbar-row>\n\n</mat-toolbar>");
+
+/***/ }),
+
+/***/ "./node_modules/tslib/tslib.es6.js":
+/*!*****************************************!*\
+  !*** ./node_modules/tslib/tslib.es6.js ***!
+  \*****************************************/
+/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function() { return __extends; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function() { return __rest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function() { return __decorate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function() { return __param; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function() { return __spread; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArrays", function() { return __spreadArrays; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function() { return __await; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function() { return __asyncGenerator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function() { return __asyncDelegator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function() { return __asyncValues; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldGet", function() { return __classPrivateFieldGet; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldSet", function() { return __classPrivateFieldSet; });
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at http://www.apache.org/licenses/LICENSE-2.0
+
+THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+MERCHANTABLITY OR NON-INFRINGEMENT.
+
+See the Apache Version 2.0 License for specific language governing permissions
+and limitations under the License.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    }
+    return __assign.apply(this, arguments);
+}
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+
+function __param(paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+}
+
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+function __generator(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+}
+
+function __exportStar(m, exports) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+}
+
+function __spread() {
+    for (var ar = [], i = 0; i < arguments.length; i++)
+        ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+
+function __spreadArrays() {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+    function fulfill(value) { resume("next", value); }
+    function reject(value) { resume("throw", value); }
+    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+}
+
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+}
+
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+}
+
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result.default = mod;
+    return result;
+}
+
+function __importDefault(mod) {
+    return (mod && mod.__esModule) ? mod : { default: mod };
+}
+
+function __classPrivateFieldGet(receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+}
+
+function __classPrivateFieldSet(receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to set private field on non-instance");
+    }
+    privateMap.set(receiver, value);
+    return value;
+}
+
 
 /***/ }),
 
@@ -234,10 +512,12 @@ AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!***********************************!*\
   !*** ./src/app/app.component.css ***!
   \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */");
 
 /***/ }),
 
@@ -263,8 +543,8 @@ let AppComponent = class AppComponent {
 AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-root',
-        template: __webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/index.js!./src/app/app.component.html"),
-        styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")).default]
     })
 ], AppComponent);
 
@@ -415,10 +695,12 @@ TokenInterceptor = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!****************************************************************************!*\
   !*** ./src/app/common/top-navigation-bar/top-navigation-bar.component.css ***!
   \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbW1vbi90b3AtbmF2aWdhdGlvbi1iYXIvdG9wLW5hdmlnYXRpb24tYmFyLmNvbXBvbmVudC5jc3MifQ== */"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbW1vbi90b3AtbmF2aWdhdGlvbi1iYXIvdG9wLW5hdmlnYXRpb24tYmFyLmNvbXBvbmVudC5jc3MifQ== */");
 
 /***/ }),
 
@@ -444,8 +726,8 @@ let TopNavigationBarComponent = class TopNavigationBarComponent {
 TopNavigationBarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-top-navigation-bar',
-        template: __webpack_require__(/*! raw-loader!./top-navigation-bar.component.html */ "./node_modules/raw-loader/index.js!./src/app/common/top-navigation-bar/top-navigation-bar.component.html"),
-        styles: [__webpack_require__(/*! ./top-navigation-bar.component.css */ "./src/app/common/top-navigation-bar/top-navigation-bar.component.css")]
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./top-navigation-bar.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/common/top-navigation-bar/top-navigation-bar.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./top-navigation-bar.component.css */ "./src/app/common/top-navigation-bar/top-navigation-bar.component.css")).default]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
 ], TopNavigationBarComponent);
@@ -506,10 +788,12 @@ DashboardModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!*********************************************************************!*\
   !*** ./src/app/modules/dashboard/dashboard/dashboard.component.css ***!
   \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = ".mat-grid-tile{\n    border: 1px solid transparent;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbW9kdWxlcy9kYXNoYm9hcmQvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksNkJBQTZCO0FBQ2pDIiwiZmlsZSI6InNyYy9hcHAvbW9kdWxlcy9kYXNoYm9hcmQvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1hdC1ncmlkLXRpbGV7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdHJhbnNwYXJlbnQ7XG59Il19 */"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".mat-grid-tile{\n    border: 1px solid transparent;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbW9kdWxlcy9kYXNoYm9hcmQvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksNkJBQTZCO0FBQ2pDIiwiZmlsZSI6InNyYy9hcHAvbW9kdWxlcy9kYXNoYm9hcmQvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1hdC1ncmlkLXRpbGV7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdHJhbnNwYXJlbnQ7XG59Il19 */");
 
 /***/ }),
 
@@ -535,8 +819,8 @@ let DashboardComponent = class DashboardComponent {
 DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-dashboard',
-        template: __webpack_require__(/*! raw-loader!./dashboard.component.html */ "./node_modules/raw-loader/index.js!./src/app/modules/dashboard/dashboard/dashboard.component.html"),
-        styles: [__webpack_require__(/*! ./dashboard.component.css */ "./src/app/modules/dashboard/dashboard/dashboard.component.css")]
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./dashboard.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/dashboard/dashboard/dashboard.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./dashboard.component.css */ "./src/app/modules/dashboard/dashboard/dashboard.component.css")).default]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
 ], DashboardComponent);
@@ -601,10 +885,12 @@ AccountsService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!*************************************************************************************!*\
   !*** ./src/app/modules/dashboard/portfolio-summary/portfolio-summary.component.css ***!
   \*************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = ":host {\n    display: block;\n    left: 0;\n    width: 90%; \n    height: 100%;  \n}\nmat-card {\n    width: 100%;\n}\n.mat-grid-tile {\n    border: 1px solid black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbW9kdWxlcy9kYXNoYm9hcmQvcG9ydGZvbGlvLXN1bW1hcnkvcG9ydGZvbGlvLXN1bW1hcnkuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGNBQWM7SUFDZCxPQUFPO0lBQ1AsVUFBVTtJQUNWLFlBQVk7QUFDaEI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUVBO0lBQ0ksdUJBQXVCO0FBQzNCIiwiZmlsZSI6InNyYy9hcHAvbW9kdWxlcy9kYXNoYm9hcmQvcG9ydGZvbGlvLXN1bW1hcnkvcG9ydGZvbGlvLXN1bW1hcnkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBsZWZ0OiAwO1xuICAgIHdpZHRoOiA5MCU7IFxuICAgIGhlaWdodDogMTAwJTsgIFxufVxubWF0LWNhcmQge1xuICAgIHdpZHRoOiAxMDAlO1xufVxuXG4ubWF0LWdyaWQtdGlsZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XG59Il19 */"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (":host {\n    display: block;\n    left: 0;\n    width: 90%; \n    height: 100%;  \n}\nmat-card {\n    width: 100%;\n}\n.mat-grid-tile {\n    border: 1px solid black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbW9kdWxlcy9kYXNoYm9hcmQvcG9ydGZvbGlvLXN1bW1hcnkvcG9ydGZvbGlvLXN1bW1hcnkuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGNBQWM7SUFDZCxPQUFPO0lBQ1AsVUFBVTtJQUNWLFlBQVk7QUFDaEI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUVBO0lBQ0ksdUJBQXVCO0FBQzNCIiwiZmlsZSI6InNyYy9hcHAvbW9kdWxlcy9kYXNoYm9hcmQvcG9ydGZvbGlvLXN1bW1hcnkvcG9ydGZvbGlvLXN1bW1hcnkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBsZWZ0OiAwO1xuICAgIHdpZHRoOiA5MCU7IFxuICAgIGhlaWdodDogMTAwJTsgIFxufVxubWF0LWNhcmQge1xuICAgIHdpZHRoOiAxMDAlO1xufVxuXG4ubWF0LWdyaWQtdGlsZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XG59Il19 */");
 
 /***/ }),
 
@@ -671,8 +957,8 @@ PortfolioSummaryComponent.ctorParameters = () => [
 PortfolioSummaryComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-portfolio-summary',
-        template: __webpack_require__(/*! raw-loader!./portfolio-summary.component.html */ "./node_modules/raw-loader/index.js!./src/app/modules/dashboard/portfolio-summary/portfolio-summary.component.html"),
-        styles: [__webpack_require__(/*! ./portfolio-summary.component.css */ "./src/app/modules/dashboard/portfolio-summary/portfolio-summary.component.css")]
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./portfolio-summary.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/dashboard/portfolio-summary/portfolio-summary.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./portfolio-summary.component.css */ "./src/app/modules/dashboard/portfolio-summary/portfolio-summary.component.css")).default]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_accounts_service__WEBPACK_IMPORTED_MODULE_2__["AccountsService"]])
 ], PortfolioSummaryComponent);
@@ -685,10 +971,12 @@ PortfolioSummaryComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!*******************************************************************************************!*\
   !*** ./src/app/modules/dashboard/transactions-summary/transactions-summary.component.css ***!
   \*******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "/* Structure */\n.example-container {\n    position: relative;\n    min-height: 200px;\n  }\n.example-table-container {\n    position: relative;\n    max-height: 400px;\n    overflow: auto;\n  }\ntable {\n    width: 100%;\n  }\n.example-loading-shade {\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: 56px;\n    right: 0;\n    background: rgba(0, 0, 0, 0.15);\n    z-index: 1;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n.example-rate-limit-reached {\n    color: #980000;\n    max-width: 360px;\n    text-align: center;\n  }\n/* Column Widths */\n.mat-column-number,\n  .mat-column-state {\n    max-width: 64px;\n  }\n.mat-column-created {\n    max-width: 124px;\n  }\n  \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbW9kdWxlcy9kYXNoYm9hcmQvdHJhbnNhY3Rpb25zLXN1bW1hcnkvdHJhbnNhY3Rpb25zLXN1bW1hcnkuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFjO0FBQ2Q7SUFDSSxrQkFBa0I7SUFDbEIsaUJBQWlCO0VBQ25CO0FBRUE7SUFDRSxrQkFBa0I7SUFDbEIsaUJBQWlCO0lBQ2pCLGNBQWM7RUFDaEI7QUFFQTtJQUNFLFdBQVc7RUFDYjtBQUVBO0lBQ0Usa0JBQWtCO0lBQ2xCLE1BQU07SUFDTixPQUFPO0lBQ1AsWUFBWTtJQUNaLFFBQVE7SUFDUiwrQkFBK0I7SUFDL0IsVUFBVTtJQUNWLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0VBQ3pCO0FBRUE7SUFDRSxjQUFjO0lBQ2QsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtFQUNwQjtBQUVBLGtCQUFrQjtBQUNsQjs7SUFFRSxlQUFlO0VBQ2pCO0FBRUE7SUFDRSxnQkFBZ0I7RUFDbEIiLCJmaWxlIjoic3JjL2FwcC9tb2R1bGVzL2Rhc2hib2FyZC90cmFuc2FjdGlvbnMtc3VtbWFyeS90cmFuc2FjdGlvbnMtc3VtbWFyeS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogU3RydWN0dXJlICovXG4uZXhhbXBsZS1jb250YWluZXIge1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgfVxuICBcbiAgLmV4YW1wbGUtdGFibGUtY29udGFpbmVyIHtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgbWF4LWhlaWdodDogNDAwcHg7XG4gICAgb3ZlcmZsb3c6IGF1dG87XG4gIH1cbiAgXG4gIHRhYmxlIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfVxuICBcbiAgLmV4YW1wbGUtbG9hZGluZy1zaGFkZSB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogMDtcbiAgICBsZWZ0OiAwO1xuICAgIGJvdHRvbTogNTZweDtcbiAgICByaWdodDogMDtcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuMTUpO1xuICAgIHotaW5kZXg6IDE7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICB9XG4gIFxuICAuZXhhbXBsZS1yYXRlLWxpbWl0LXJlYWNoZWQge1xuICAgIGNvbG9yOiAjOTgwMDAwO1xuICAgIG1heC13aWR0aDogMzYwcHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB9XG4gIFxuICAvKiBDb2x1bW4gV2lkdGhzICovXG4gIC5tYXQtY29sdW1uLW51bWJlcixcbiAgLm1hdC1jb2x1bW4tc3RhdGUge1xuICAgIG1heC13aWR0aDogNjRweDtcbiAgfVxuICBcbiAgLm1hdC1jb2x1bW4tY3JlYXRlZCB7XG4gICAgbWF4LXdpZHRoOiAxMjRweDtcbiAgfVxuICAiXX0= */"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("/* Structure */\n.example-container {\n    position: relative;\n    min-height: 200px;\n  }\n.example-table-container {\n    position: relative;\n    max-height: 400px;\n    overflow: auto;\n  }\ntable {\n    width: 100%;\n  }\n.example-loading-shade {\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: 56px;\n    right: 0;\n    background: rgba(0, 0, 0, 0.15);\n    z-index: 1;\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n            justify-content: center;\n  }\n.example-rate-limit-reached {\n    color: #980000;\n    max-width: 360px;\n    text-align: center;\n  }\n/* Column Widths */\n.mat-column-number,\n  .mat-column-state {\n    max-width: 64px;\n  }\n.mat-column-created {\n    max-width: 124px;\n  }\n  \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbW9kdWxlcy9kYXNoYm9hcmQvdHJhbnNhY3Rpb25zLXN1bW1hcnkvdHJhbnNhY3Rpb25zLXN1bW1hcnkuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFjO0FBQ2Q7SUFDSSxrQkFBa0I7SUFDbEIsaUJBQWlCO0VBQ25CO0FBRUE7SUFDRSxrQkFBa0I7SUFDbEIsaUJBQWlCO0lBQ2pCLGNBQWM7RUFDaEI7QUFFQTtJQUNFLFdBQVc7RUFDYjtBQUVBO0lBQ0Usa0JBQWtCO0lBQ2xCLE1BQU07SUFDTixPQUFPO0lBQ1AsWUFBWTtJQUNaLFFBQVE7SUFDUiwrQkFBK0I7SUFDL0IsVUFBVTtJQUNWLG9CQUFhO0lBQWIsYUFBYTtJQUNiLHlCQUFtQjtZQUFuQixtQkFBbUI7SUFDbkIsd0JBQXVCO1lBQXZCLHVCQUF1QjtFQUN6QjtBQUVBO0lBQ0UsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixrQkFBa0I7RUFDcEI7QUFFQSxrQkFBa0I7QUFDbEI7O0lBRUUsZUFBZTtFQUNqQjtBQUVBO0lBQ0UsZ0JBQWdCO0VBQ2xCIiwiZmlsZSI6InNyYy9hcHAvbW9kdWxlcy9kYXNoYm9hcmQvdHJhbnNhY3Rpb25zLXN1bW1hcnkvdHJhbnNhY3Rpb25zLXN1bW1hcnkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFN0cnVjdHVyZSAqL1xuLmV4YW1wbGUtY29udGFpbmVyIHtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgbWluLWhlaWdodDogMjAwcHg7XG4gIH1cbiAgXG4gIC5leGFtcGxlLXRhYmxlLWNvbnRhaW5lciB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIG1heC1oZWlnaHQ6IDQwMHB4O1xuICAgIG92ZXJmbG93OiBhdXRvO1xuICB9XG4gIFxuICB0YWJsZSB7XG4gICAgd2lkdGg6IDEwMCU7XG4gIH1cbiAgXG4gIC5leGFtcGxlLWxvYWRpbmctc2hhZGUge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDA7XG4gICAgbGVmdDogMDtcbiAgICBib3R0b206IDU2cHg7XG4gICAgcmlnaHQ6IDA7XG4gICAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjE1KTtcbiAgICB6LWluZGV4OiAxO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgfVxuICBcbiAgLmV4YW1wbGUtcmF0ZS1saW1pdC1yZWFjaGVkIHtcbiAgICBjb2xvcjogIzk4MDAwMDtcbiAgICBtYXgtd2lkdGg6IDM2MHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgfVxuICBcbiAgLyogQ29sdW1uIFdpZHRocyAqL1xuICAubWF0LWNvbHVtbi1udW1iZXIsXG4gIC5tYXQtY29sdW1uLXN0YXRlIHtcbiAgICBtYXgtd2lkdGg6IDY0cHg7XG4gIH1cbiAgXG4gIC5tYXQtY29sdW1uLWNyZWF0ZWQge1xuICAgIG1heC13aWR0aDogMTI0cHg7XG4gIH1cbiAgIl19 */");
 
 /***/ }),
 
@@ -762,8 +1050,8 @@ tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 TransactionsSummaryComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-transactions-summary',
-        template: __webpack_require__(/*! raw-loader!./transactions-summary.component.html */ "./node_modules/raw-loader/index.js!./src/app/modules/dashboard/transactions-summary/transactions-summary.component.html"),
-        styles: [__webpack_require__(/*! ./transactions-summary.component.css */ "./src/app/modules/dashboard/transactions-summary/transactions-summary.component.css")]
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./transactions-summary.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/dashboard/transactions-summary/transactions-summary.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./transactions-summary.component.css */ "./src/app/modules/dashboard/transactions-summary/transactions-summary.component.css")).default]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"]])
 ], TransactionsSummaryComponent);
@@ -780,9 +1068,6 @@ class ExampleHttpDatabase {
         return this.http.get(requestUrl);
     }
 }
-ExampleHttpDatabase.ctorParameters = () => [
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] }
-];
 
 
 /***/ }),
@@ -791,10 +1076,12 @@ ExampleHttpDatabase.ctorParameters = () => [
 /*!*******************************************************************!*\
   !*** ./src/app/modules/login/login-form/login-form.component.css ***!
   \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = ".login-form {\n    min-width: 150px;\n    max-width: 500px;\n    width: 100%;\n  }\n  \n  .full-width {\n    width: 100%;\n  }\n  \n  .login-card {\n    min-width: 200px;\n    max-width: 600px;\n    width: 100%; \n    align-self: center;\n    margin-left: 20%;\n    margin-top: 10%;\n    align-content: center;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbW9kdWxlcy9sb2dpbi9sb2dpbi1mb3JtL2xvZ2luLWZvcm0uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsV0FBVztFQUNiOztFQUVBO0lBQ0UsV0FBVztFQUNiOztFQUVBO0lBQ0UsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixXQUFXO0lBRVgsa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixlQUFlO0lBQ2YscUJBQXFCO0VBQ3ZCIiwiZmlsZSI6InNyYy9hcHAvbW9kdWxlcy9sb2dpbi9sb2dpbi1mb3JtL2xvZ2luLWZvcm0uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5sb2dpbi1mb3JtIHtcbiAgICBtaW4td2lkdGg6IDE1MHB4O1xuICAgIG1heC13aWR0aDogNTAwcHg7XG4gICAgd2lkdGg6IDEwMCU7XG4gIH1cbiAgXG4gIC5mdWxsLXdpZHRoIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfVxuXG4gIC5sb2dpbi1jYXJkIHtcbiAgICBtaW4td2lkdGg6IDIwMHB4O1xuICAgIG1heC13aWR0aDogNjAwcHg7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgLXdlYmtpdC1hbGlnbi1zZWxmOiBjZW50ZXI7IFxuICAgIGFsaWduLXNlbGY6IGNlbnRlcjtcbiAgICBtYXJnaW4tbGVmdDogMjAlO1xuICAgIG1hcmdpbi10b3A6IDEwJTtcbiAgICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG4gIH0iXX0= */"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".login-form {\n    min-width: 150px;\n    max-width: 500px;\n    width: 100%;\n  }\n  \n  .full-width {\n    width: 100%;\n  }\n  \n  .login-card {\n    min-width: 200px;\n    max-width: 600px;\n    width: 100%;\n    -webkit-align-self: center; \n    align-self: center;\n    margin-left: 20%;\n    margin-top: 10%;\n    align-content: center;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbW9kdWxlcy9sb2dpbi9sb2dpbi1mb3JtL2xvZ2luLWZvcm0uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsV0FBVztFQUNiOztFQUVBO0lBQ0UsV0FBVztFQUNiOztFQUVBO0lBQ0UsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixXQUFXO0lBQ1gsMEJBQTBCO0lBQzFCLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLHFCQUFxQjtFQUN2QiIsImZpbGUiOiJzcmMvYXBwL21vZHVsZXMvbG9naW4vbG9naW4tZm9ybS9sb2dpbi1mb3JtLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubG9naW4tZm9ybSB7XG4gICAgbWluLXdpZHRoOiAxNTBweDtcbiAgICBtYXgtd2lkdGg6IDUwMHB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICB9XG4gIFxuICAuZnVsbC13aWR0aCB7XG4gICAgd2lkdGg6IDEwMCU7XG4gIH1cblxuICAubG9naW4tY2FyZCB7XG4gICAgbWluLXdpZHRoOiAyMDBweDtcbiAgICBtYXgtd2lkdGg6IDYwMHB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIC13ZWJraXQtYWxpZ24tc2VsZjogY2VudGVyOyBcbiAgICBhbGlnbi1zZWxmOiBjZW50ZXI7XG4gICAgbWFyZ2luLWxlZnQ6IDIwJTtcbiAgICBtYXJnaW4tdG9wOiAxMCU7XG4gICAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICB9Il19 */");
 
 /***/ }),
 
@@ -873,8 +1160,8 @@ LoginFormComponent.ctorParameters = () => [
 LoginFormComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-login-form',
-        template: __webpack_require__(/*! raw-loader!./login-form.component.html */ "./node_modules/raw-loader/index.js!./src/app/modules/login/login-form/login-form.component.html"),
-        styles: [__webpack_require__(/*! ./login-form.component.css */ "./src/app/modules/login/login-form/login-form.component.css")]
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./login-form.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/login/login-form/login-form.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./login-form.component.css */ "./src/app/modules/login/login-form/login-form.component.css")).default]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_login_service__WEBPACK_IMPORTED_MODULE_2__["LoginService"],
         src_app_theme_notification_notification_service__WEBPACK_IMPORTED_MODULE_3__["NotificationService"],
@@ -995,10 +1282,12 @@ LoginService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!***********************************************************!*\
   !*** ./src/app/modules/login/logout/logout.component.css ***!
   \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21vZHVsZXMvbG9naW4vbG9nb3V0L2xvZ291dC5jb21wb25lbnQuY3NzIn0= */"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21vZHVsZXMvbG9naW4vbG9nb3V0L2xvZ291dC5jb21wb25lbnQuY3NzIn0= */");
 
 /***/ }),
 
@@ -1044,8 +1333,8 @@ LogoutComponent.ctorParameters = () => [
 LogoutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-logout',
-        template: __webpack_require__(/*! raw-loader!./logout.component.html */ "./node_modules/raw-loader/index.js!./src/app/modules/login/logout/logout.component.html"),
-        styles: [__webpack_require__(/*! ./logout.component.css */ "./src/app/modules/login/logout/logout.component.css")]
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./logout.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/login/logout/logout.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./logout.component.css */ "./src/app/modules/login/logout/logout.component.css")).default]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], src_app_theme_notification_notification_service__WEBPACK_IMPORTED_MODULE_3__["NotificationService"], _login_service__WEBPACK_IMPORTED_MODULE_4__["LoginService"]])
 ], LogoutComponent);
@@ -1064,6 +1353,8 @@ LogoutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "User", function() { return User; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
 class User {
 }
 
@@ -1074,10 +1365,12 @@ class User {
 /*!***********************************************************************************!*\
   !*** ./src/app/modules/welcome/welcome-component/welcome-component.component.css ***!
   \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21vZHVsZXMvd2VsY29tZS93ZWxjb21lLWNvbXBvbmVudC93ZWxjb21lLWNvbXBvbmVudC5jb21wb25lbnQuY3NzIn0= */"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21vZHVsZXMvd2VsY29tZS93ZWxjb21lLWNvbXBvbmVudC93ZWxjb21lLWNvbXBvbmVudC5jb21wb25lbnQuY3NzIn0= */");
 
 /***/ }),
 
@@ -1103,8 +1396,8 @@ let WelcomeComponent = class WelcomeComponent {
 WelcomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-welcome-component',
-        template: __webpack_require__(/*! raw-loader!./welcome-component.component.html */ "./node_modules/raw-loader/index.js!./src/app/modules/welcome/welcome-component/welcome-component.component.html"),
-        styles: [__webpack_require__(/*! ./welcome-component.component.css */ "./src/app/modules/welcome/welcome-component/welcome-component.component.css")]
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./welcome-component.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/welcome/welcome-component/welcome-component.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./welcome-component.component.css */ "./src/app/modules/welcome/welcome-component/welcome-component.component.css")).default]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
 ], WelcomeComponent);
@@ -1195,10 +1488,12 @@ PageLayoutsModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!****************************************************************!*\
   !*** ./src/app/page-layouts/pre-login/pre-login.component.css ***!
   \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2UtbGF5b3V0cy9wcmUtbG9naW4vcHJlLWxvZ2luLmNvbXBvbmVudC5jc3MifQ== */"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2UtbGF5b3V0cy9wcmUtbG9naW4vcHJlLWxvZ2luLmNvbXBvbmVudC5jc3MifQ== */");
 
 /***/ }),
 
@@ -1224,8 +1519,8 @@ let PreLoginComponent = class PreLoginComponent {
 PreLoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-pre-login',
-        template: __webpack_require__(/*! raw-loader!./pre-login.component.html */ "./node_modules/raw-loader/index.js!./src/app/page-layouts/pre-login/pre-login.component.html"),
-        styles: [__webpack_require__(/*! ./pre-login.component.css */ "./src/app/page-layouts/pre-login/pre-login.component.css")]
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./pre-login.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/page-layouts/pre-login/pre-login.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./pre-login.component.css */ "./src/app/page-layouts/pre-login/pre-login.component.css")).default]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
 ], PreLoginComponent);
@@ -1245,6 +1540,8 @@ PreLoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfirmationDialogueInput", function() { return ConfirmationDialogueInput; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfirmationDialogueButtons", function() { return ConfirmationDialogueButtons; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
 class ConfirmationDialogueInput {
 }
 class ConfirmationDialogueButtons {
@@ -1254,11 +1551,6 @@ class ConfirmationDialogueButtons {
         this.color = color;
     }
 }
-ConfirmationDialogueButtons.ctorParameters = () => [
-    { type: String },
-    { type: String },
-    { type: String }
-];
 
 
 /***/ }),
@@ -1267,10 +1559,12 @@ ConfirmationDialogueButtons.ctorParameters = () => [
 /*!*********************************************************************************!*\
   !*** ./src/app/theme/confirmation-dialogue/confirmation-dialogue.component.css ***!
   \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = ".button-class{\n    margin: 3%;\n}\n.dialogue{\n    text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGhlbWUvY29uZmlybWF0aW9uLWRpYWxvZ3VlL2NvbmZpcm1hdGlvbi1kaWFsb2d1ZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtBQUNkO0FBQ0E7SUFDSSxrQkFBa0I7QUFDdEIiLCJmaWxlIjoic3JjL2FwcC90aGVtZS9jb25maXJtYXRpb24tZGlhbG9ndWUvY29uZmlybWF0aW9uLWRpYWxvZ3VlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnV0dG9uLWNsYXNze1xuICAgIG1hcmdpbjogMyU7XG59XG4uZGlhbG9ndWV7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufSJdfQ== */"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".button-class{\n    margin: 3%;\n}\n.dialogue{\n    text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGhlbWUvY29uZmlybWF0aW9uLWRpYWxvZ3VlL2NvbmZpcm1hdGlvbi1kaWFsb2d1ZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtBQUNkO0FBQ0E7SUFDSSxrQkFBa0I7QUFDdEIiLCJmaWxlIjoic3JjL2FwcC90aGVtZS9jb25maXJtYXRpb24tZGlhbG9ndWUvY29uZmlybWF0aW9uLWRpYWxvZ3VlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnV0dG9uLWNsYXNze1xuICAgIG1hcmdpbjogMyU7XG59XG4uZGlhbG9ndWV7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufSJdfQ== */");
 
 /***/ }),
 
@@ -1313,8 +1607,8 @@ ConfirmationDialogueComponent.ctorParameters = () => [
 ConfirmationDialogueComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-confirmation-dialogue',
-        template: __webpack_require__(/*! raw-loader!./confirmation-dialogue.component.html */ "./node_modules/raw-loader/index.js!./src/app/theme/confirmation-dialogue/confirmation-dialogue.component.html"),
-        styles: [__webpack_require__(/*! ./confirmation-dialogue.component.css */ "./src/app/theme/confirmation-dialogue/confirmation-dialogue.component.css")]
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./confirmation-dialogue.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/theme/confirmation-dialogue/confirmation-dialogue.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./confirmation-dialogue.component.css */ "./src/app/theme/confirmation-dialogue/confirmation-dialogue.component.css")).default]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](1, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"])),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogRef"],
@@ -1329,10 +1623,12 @@ ConfirmationDialogueComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]
 /*!*********************************************************************!*\
   !*** ./src/app/theme/expandable-list/expandable-list.component.css ***!
   \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "table {\n    width: 100%;\n  }\n  \n  tr.user-detail-row {\n    height: 0;\n  }\n  \n  tr.user-details-row:not(.user-details-expanded-row):hover {\n    background: #f5f5f5;\n  }\n  \n  tr.user-details-row:not(.user-details-expanded-row):active {\n    background: #efefef;\n  }\n  \n  .user-details-row td {\n    border-bottom-width: 0;\n  }\n  \n  .user-details {\n    overflow: hidden;\n    display: flex;\n  }\n  \n  .user-details-box {\n    min-width: 80px;\n    border: 2px solid black;\n    padding: 8px;\n    font-weight: lighter;\n    margin: 8px 0;\n    height: 104px;\n  }\n  \n  .user-details-id {\n    font-weight: bold;\n    font-size: 40px;\n    line-height: normal;\n  }\n  \n  .user-details-table{\n    min-width: 80px;\n    border: 2px solid lightgray;\n    padding: 8px;\n    font-weight: lighter;\n    margin: 8px 0;\n    height: 104px;\n  }\n \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGhlbWUvZXhwYW5kYWJsZS1saXN0L2V4cGFuZGFibGUtbGlzdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksV0FBVztFQUNiOztFQUVBO0lBQ0UsU0FBUztFQUNYOztFQUVBO0lBQ0UsbUJBQW1CO0VBQ3JCOztFQUVBO0lBQ0UsbUJBQW1CO0VBQ3JCOztFQUVBO0lBQ0Usc0JBQXNCO0VBQ3hCOztFQUVBO0lBQ0UsZ0JBQWdCO0lBQ2hCLGFBQWE7RUFDZjs7RUFFQTtJQUNFLGVBQWU7SUFDZix1QkFBdUI7SUFDdkIsWUFBWTtJQUNaLG9CQUFvQjtJQUNwQixhQUFhO0lBQ2IsYUFBYTtFQUNmOztFQUVBO0lBQ0UsaUJBQWlCO0lBQ2pCLGVBQWU7SUFDZixtQkFBbUI7RUFDckI7O0VBRUE7SUFDRSxlQUFlO0lBQ2YsMkJBQTJCO0lBQzNCLFlBQVk7SUFDWixvQkFBb0I7SUFDcEIsYUFBYTtJQUNiLGFBQWE7RUFDZiIsImZpbGUiOiJzcmMvYXBwL3RoZW1lL2V4cGFuZGFibGUtbGlzdC9leHBhbmRhYmxlLWxpc3QuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbInRhYmxlIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfVxuICBcbiAgdHIudXNlci1kZXRhaWwtcm93IHtcbiAgICBoZWlnaHQ6IDA7XG4gIH1cbiAgXG4gIHRyLnVzZXItZGV0YWlscy1yb3c6bm90KC51c2VyLWRldGFpbHMtZXhwYW5kZWQtcm93KTpob3ZlciB7XG4gICAgYmFja2dyb3VuZDogI2Y1ZjVmNTtcbiAgfVxuICBcbiAgdHIudXNlci1kZXRhaWxzLXJvdzpub3QoLnVzZXItZGV0YWlscy1leHBhbmRlZC1yb3cpOmFjdGl2ZSB7XG4gICAgYmFja2dyb3VuZDogI2VmZWZlZjtcbiAgfVxuICBcbiAgLnVzZXItZGV0YWlscy1yb3cgdGQge1xuICAgIGJvcmRlci1ib3R0b20td2lkdGg6IDA7XG4gIH1cbiAgXG4gIC51c2VyLWRldGFpbHMge1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgZGlzcGxheTogZmxleDtcbiAgfVxuICBcbiAgLnVzZXItZGV0YWlscy1ib3gge1xuICAgIG1pbi13aWR0aDogODBweDtcbiAgICBib3JkZXI6IDJweCBzb2xpZCBibGFjaztcbiAgICBwYWRkaW5nOiA4cHg7XG4gICAgZm9udC13ZWlnaHQ6IGxpZ2h0ZXI7XG4gICAgbWFyZ2luOiA4cHggMDtcbiAgICBoZWlnaHQ6IDEwNHB4O1xuICB9XG4gIFxuICAudXNlci1kZXRhaWxzLWlkIHtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICBmb250LXNpemU6IDQwcHg7XG4gICAgbGluZS1oZWlnaHQ6IG5vcm1hbDtcbiAgfVxuICBcbiAgLnVzZXItZGV0YWlscy10YWJsZXtcbiAgICBtaW4td2lkdGg6IDgwcHg7XG4gICAgYm9yZGVyOiAycHggc29saWQgbGlnaHRncmF5O1xuICAgIHBhZGRpbmc6IDhweDtcbiAgICBmb250LXdlaWdodDogbGlnaHRlcjtcbiAgICBtYXJnaW46IDhweCAwO1xuICAgIGhlaWdodDogMTA0cHg7XG4gIH1cbiAiXX0= */"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("table {\n    width: 100%;\n  }\n  \n  tr.user-detail-row {\n    height: 0;\n  }\n  \n  tr.user-details-row:not(.user-details-expanded-row):hover {\n    background: #f5f5f5;\n  }\n  \n  tr.user-details-row:not(.user-details-expanded-row):active {\n    background: #efefef;\n  }\n  \n  .user-details-row td {\n    border-bottom-width: 0;\n  }\n  \n  .user-details {\n    overflow: hidden;\n    display: -webkit-box;\n    display: flex;\n  }\n  \n  .user-details-box {\n    min-width: 80px;\n    border: 2px solid black;\n    padding: 8px;\n    font-weight: lighter;\n    margin: 8px 0;\n    height: 104px;\n  }\n  \n  .user-details-id {\n    font-weight: bold;\n    font-size: 40px;\n    line-height: normal;\n  }\n  \n  .user-details-table{\n    min-width: 80px;\n    border: 2px solid lightgray;\n    padding: 8px;\n    font-weight: lighter;\n    margin: 8px 0;\n    height: 104px;\n  }\n \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGhlbWUvZXhwYW5kYWJsZS1saXN0L2V4cGFuZGFibGUtbGlzdC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksV0FBVztFQUNiOztFQUVBO0lBQ0UsU0FBUztFQUNYOztFQUVBO0lBQ0UsbUJBQW1CO0VBQ3JCOztFQUVBO0lBQ0UsbUJBQW1CO0VBQ3JCOztFQUVBO0lBQ0Usc0JBQXNCO0VBQ3hCOztFQUVBO0lBQ0UsZ0JBQWdCO0lBQ2hCLG9CQUFhO0lBQWIsYUFBYTtFQUNmOztFQUVBO0lBQ0UsZUFBZTtJQUNmLHVCQUF1QjtJQUN2QixZQUFZO0lBQ1osb0JBQW9CO0lBQ3BCLGFBQWE7SUFDYixhQUFhO0VBQ2Y7O0VBRUE7SUFDRSxpQkFBaUI7SUFDakIsZUFBZTtJQUNmLG1CQUFtQjtFQUNyQjs7RUFFQTtJQUNFLGVBQWU7SUFDZiwyQkFBMkI7SUFDM0IsWUFBWTtJQUNaLG9CQUFvQjtJQUNwQixhQUFhO0lBQ2IsYUFBYTtFQUNmIiwiZmlsZSI6InNyYy9hcHAvdGhlbWUvZXhwYW5kYWJsZS1saXN0L2V4cGFuZGFibGUtbGlzdC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsidGFibGUge1xuICAgIHdpZHRoOiAxMDAlO1xuICB9XG4gIFxuICB0ci51c2VyLWRldGFpbC1yb3cge1xuICAgIGhlaWdodDogMDtcbiAgfVxuICBcbiAgdHIudXNlci1kZXRhaWxzLXJvdzpub3QoLnVzZXItZGV0YWlscy1leHBhbmRlZC1yb3cpOmhvdmVyIHtcbiAgICBiYWNrZ3JvdW5kOiAjZjVmNWY1O1xuICB9XG4gIFxuICB0ci51c2VyLWRldGFpbHMtcm93Om5vdCgudXNlci1kZXRhaWxzLWV4cGFuZGVkLXJvdyk6YWN0aXZlIHtcbiAgICBiYWNrZ3JvdW5kOiAjZWZlZmVmO1xuICB9XG4gIFxuICAudXNlci1kZXRhaWxzLXJvdyB0ZCB7XG4gICAgYm9yZGVyLWJvdHRvbS13aWR0aDogMDtcbiAgfVxuICBcbiAgLnVzZXItZGV0YWlscyB7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICB9XG4gIFxuICAudXNlci1kZXRhaWxzLWJveCB7XG4gICAgbWluLXdpZHRoOiA4MHB4O1xuICAgIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xuICAgIHBhZGRpbmc6IDhweDtcbiAgICBmb250LXdlaWdodDogbGlnaHRlcjtcbiAgICBtYXJnaW46IDhweCAwO1xuICAgIGhlaWdodDogMTA0cHg7XG4gIH1cbiAgXG4gIC51c2VyLWRldGFpbHMtaWQge1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc2l6ZTogNDBweDtcbiAgICBsaW5lLWhlaWdodDogbm9ybWFsO1xuICB9XG4gIFxuICAudXNlci1kZXRhaWxzLXRhYmxle1xuICAgIG1pbi13aWR0aDogODBweDtcbiAgICBib3JkZXI6IDJweCBzb2xpZCBsaWdodGdyYXk7XG4gICAgcGFkZGluZzogOHB4O1xuICAgIGZvbnQtd2VpZ2h0OiBsaWdodGVyO1xuICAgIG1hcmdpbjogOHB4IDA7XG4gICAgaGVpZ2h0OiAxMDRweDtcbiAgfVxuICJdfQ== */");
 
 /***/ }),
 
@@ -1424,7 +1720,7 @@ tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 ExpandableListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-expandable-list',
-        template: __webpack_require__(/*! raw-loader!./expandable-list.component.html */ "./node_modules/raw-loader/index.js!./src/app/theme/expandable-list/expandable-list.component.html"),
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./expandable-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/theme/expandable-list/expandable-list.component.html")).default,
         animations: [
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('detailExpand', [
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('collapsed', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({ height: '0px', minHeight: '0', display: 'none' })),
@@ -1432,7 +1728,7 @@ ExpandableListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('expanded <=> collapsed', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
             ]),
         ],
-        styles: [__webpack_require__(/*! ./expandable-list.component.css */ "./src/app/theme/expandable-list/expandable-list.component.css")]
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./expandable-list.component.css */ "./src/app/theme/expandable-list/expandable-list.component.css")).default]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"]])
 ], ExpandableListComponent);
@@ -1451,6 +1747,8 @@ ExpandableListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageUpdatedEventData", function() { return PageUpdatedEventData; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
 class PageUpdatedEventData {
 }
 
@@ -1461,10 +1759,12 @@ class PageUpdatedEventData {
 /*!***********************************************************!*\
   !*** ./src/app/theme/footer-bar/footer-bar.component.css ***!
   \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "footer {\n    position: fixed;\n    bottom:0;\n    width:100%;\n    height:64px;   /* Height of the footer */\n    background:#6cf;\n    margin-top: 10px;\n }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGhlbWUvZm9vdGVyLWJhci9mb290ZXItYmFyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2YsUUFBUTtJQUNSLFVBQVU7SUFDVixXQUFXLElBQUkseUJBQXlCO0lBQ3hDLGVBQWU7SUFDZixnQkFBZ0I7Q0FDbkIiLCJmaWxlIjoic3JjL2FwcC90aGVtZS9mb290ZXItYmFyL2Zvb3Rlci1iYXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImZvb3RlciB7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTowO1xuICAgIHdpZHRoOjEwMCU7XG4gICAgaGVpZ2h0OjY0cHg7ICAgLyogSGVpZ2h0IG9mIHRoZSBmb290ZXIgKi9cbiAgICBiYWNrZ3JvdW5kOiM2Y2Y7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiB9Il19 */"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("footer {\n    position: fixed;\n    bottom:0;\n    width:100%;\n    height:64px;   /* Height of the footer */\n    background:#6cf;\n    margin-top: 10px;\n }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGhlbWUvZm9vdGVyLWJhci9mb290ZXItYmFyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2YsUUFBUTtJQUNSLFVBQVU7SUFDVixXQUFXLElBQUkseUJBQXlCO0lBQ3hDLGVBQWU7SUFDZixnQkFBZ0I7Q0FDbkIiLCJmaWxlIjoic3JjL2FwcC90aGVtZS9mb290ZXItYmFyL2Zvb3Rlci1iYXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImZvb3RlciB7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTowO1xuICAgIHdpZHRoOjEwMCU7XG4gICAgaGVpZ2h0OjY0cHg7ICAgLyogSGVpZ2h0IG9mIHRoZSBmb290ZXIgKi9cbiAgICBiYWNrZ3JvdW5kOiM2Y2Y7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiB9Il19 */");
 
 /***/ }),
 
@@ -1490,8 +1790,8 @@ let FooterBarComponent = class FooterBarComponent {
 FooterBarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-footer-bar',
-        template: __webpack_require__(/*! raw-loader!./footer-bar.component.html */ "./node_modules/raw-loader/index.js!./src/app/theme/footer-bar/footer-bar.component.html"),
-        styles: [__webpack_require__(/*! ./footer-bar.component.css */ "./src/app/theme/footer-bar/footer-bar.component.css")]
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./footer-bar.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/theme/footer-bar/footer-bar.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./footer-bar.component.css */ "./src/app/theme/footer-bar/footer-bar.component.css")).default]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
 ], FooterBarComponent);
@@ -1504,10 +1804,12 @@ FooterBarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!*************************************************************!*\
   !*** ./src/app/theme/main-layout/main-layout.component.css ***!
   \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = ".mainContent{\n    margin: 10px;\n    margin-bottom: 70px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGhlbWUvbWFpbi1sYXlvdXQvbWFpbi1sYXlvdXQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFlBQVk7SUFDWixtQkFBbUI7QUFDdkIiLCJmaWxlIjoic3JjL2FwcC90aGVtZS9tYWluLWxheW91dC9tYWluLWxheW91dC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1haW5Db250ZW50e1xuICAgIG1hcmdpbjogMTBweDtcbiAgICBtYXJnaW4tYm90dG9tOiA3MHB4O1xufSJdfQ== */"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".mainContent{\n    margin: 10px;\n    margin-bottom: 70px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGhlbWUvbWFpbi1sYXlvdXQvbWFpbi1sYXlvdXQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFlBQVk7SUFDWixtQkFBbUI7QUFDdkIiLCJmaWxlIjoic3JjL2FwcC90aGVtZS9tYWluLWxheW91dC9tYWluLWxheW91dC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1haW5Db250ZW50e1xuICAgIG1hcmdpbjogMTBweDtcbiAgICBtYXJnaW4tYm90dG9tOiA3MHB4O1xufSJdfQ== */");
 
 /***/ }),
 
@@ -1533,8 +1835,8 @@ let MainLayoutComponent = class MainLayoutComponent {
 MainLayoutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-main-layout',
-        template: __webpack_require__(/*! raw-loader!./main-layout.component.html */ "./node_modules/raw-loader/index.js!./src/app/theme/main-layout/main-layout.component.html"),
-        styles: [__webpack_require__(/*! ./main-layout.component.css */ "./src/app/theme/main-layout/main-layout.component.css")]
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./main-layout.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/theme/main-layout/main-layout.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./main-layout.component.css */ "./src/app/theme/main-layout/main-layout.component.css")).default]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
 ], MainLayoutComponent);
@@ -1547,10 +1849,12 @@ MainLayoutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!***************************************************************!*\
   !*** ./src/app/theme/notification/notification.component.css ***!
   \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3RoZW1lL25vdGlmaWNhdGlvbi9ub3RpZmljYXRpb24uY29tcG9uZW50LmNzcyJ9 */"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3RoZW1lL25vdGlmaWNhdGlvbi9ub3RpZmljYXRpb24uY29tcG9uZW50LmNzcyJ9 */");
 
 /***/ }),
 
@@ -1601,8 +1905,8 @@ NotificationComponent.ctorParameters = () => [
 NotificationComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-notification',
-        template: __webpack_require__(/*! raw-loader!./notification.component.html */ "./node_modules/raw-loader/index.js!./src/app/theme/notification/notification.component.html"),
-        styles: [__webpack_require__(/*! ./notification.component.css */ "./src/app/theme/notification/notification.component.css")]
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./notification.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/theme/notification/notification.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./notification.component.css */ "./src/app/theme/notification/notification.component.css")).default]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_notification_service__WEBPACK_IMPORTED_MODULE_2__["NotificationService"], _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSnackBar"]])
 ], NotificationComponent);
@@ -1719,10 +2023,12 @@ ThemeModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!*****************************************************************!*\
   !*** ./src/app/theme/top-fixed-bar/top-fixed-bar.component.css ***!
   \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "button {\n    margin-left: 10px;\n}\nmat-icon{\n    margin-right: 10px;\n}\n.mat-toolbar-multiple-rows {\n    min-height: 0; \n}\n.mat-toolbar-row {\n    height: unset;\n}\n.last {\n    position: absolute;\n    right: 0%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGhlbWUvdG9wLWZpeGVkLWJhci90b3AtZml4ZWQtYmFyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtBQUNqQjtBQUNBO0lBQ0ksYUFBYTtBQUNqQjtBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLFNBQVM7QUFDYiIsImZpbGUiOiJzcmMvYXBwL3RoZW1lL3RvcC1maXhlZC1iYXIvdG9wLWZpeGVkLWJhci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYnV0dG9uIHtcbiAgICBtYXJnaW4tbGVmdDogMTBweDtcbn1cbm1hdC1pY29ue1xuICAgIG1hcmdpbi1yaWdodDogMTBweDtcbn1cbi5tYXQtdG9vbGJhci1tdWx0aXBsZS1yb3dzIHtcbiAgICBtaW4taGVpZ2h0OiAwOyBcbn1cbi5tYXQtdG9vbGJhci1yb3cge1xuICAgIGhlaWdodDogdW5zZXQ7XG59XG5cbi5sYXN0IHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgcmlnaHQ6IDAlO1xufSJdfQ== */"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("button {\n    margin-left: 10px;\n}\nmat-icon{\n    margin-right: 10px;\n}\n.mat-toolbar-multiple-rows {\n    min-height: 0; \n}\n.mat-toolbar-row {\n    height: unset;\n}\n.last {\n    position: absolute;\n    right: 0%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGhlbWUvdG9wLWZpeGVkLWJhci90b3AtZml4ZWQtYmFyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtBQUNqQjtBQUNBO0lBQ0ksYUFBYTtBQUNqQjtBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLFNBQVM7QUFDYiIsImZpbGUiOiJzcmMvYXBwL3RoZW1lL3RvcC1maXhlZC1iYXIvdG9wLWZpeGVkLWJhci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYnV0dG9uIHtcbiAgICBtYXJnaW4tbGVmdDogMTBweDtcbn1cbm1hdC1pY29ue1xuICAgIG1hcmdpbi1yaWdodDogMTBweDtcbn1cbi5tYXQtdG9vbGJhci1tdWx0aXBsZS1yb3dzIHtcbiAgICBtaW4taGVpZ2h0OiAwOyBcbn1cbi5tYXQtdG9vbGJhci1yb3cge1xuICAgIGhlaWdodDogdW5zZXQ7XG59XG5cbi5sYXN0IHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgcmlnaHQ6IDAlO1xufSJdfQ== */");
 
 /***/ }),
 
@@ -1758,8 +2064,8 @@ TopFixedBarComponent.ctorParameters = () => [
 TopFixedBarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-top-fixed-bar',
-        template: __webpack_require__(/*! raw-loader!./top-fixed-bar.component.html */ "./node_modules/raw-loader/index.js!./src/app/theme/top-fixed-bar/top-fixed-bar.component.html"),
-        styles: [__webpack_require__(/*! ./top-fixed-bar.component.css */ "./src/app/theme/top-fixed-bar/top-fixed-bar.component.css")]
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./top-fixed-bar.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/theme/top-fixed-bar/top-fixed-bar.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./top-fixed-bar.component.css */ "./src/app/theme/top-fixed-bar/top-fixed-bar.component.css")).default]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_modules_login_login_service__WEBPACK_IMPORTED_MODULE_2__["LoginService"]])
 ], TopFixedBarComponent);
@@ -1867,9 +2173,11 @@ BackendAPIService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
+
 const environment = {
     production: false,
     backendUrl: 'http://localhost:8080',
@@ -1897,21 +2205,23 @@ const environment = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
-/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
-/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
 
 
 
 
 
-if (_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].production) {
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["enableProdMode"])();
+
+if (_environments_environment__WEBPACK_IMPORTED_MODULE_5__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["enableProdMode"])();
 }
-Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_3__["AppModule"])
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_4__["AppModule"])
     .catch(err => console.error(err));
 
 
