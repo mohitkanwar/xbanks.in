@@ -1,0 +1,10 @@
+[{
+    "id": "2",
+    "initialAmount": 2500000,
+    "lastEmiDate": "22/Oct/2020",
+    "monthlyEmi": 20000,
+    "nextEmiDate": "22/Nov/2020",
+    "number": "0000001122334455",
+    "paidAmount": 60000,
+    "remainingAmount": 1900000
+}]
