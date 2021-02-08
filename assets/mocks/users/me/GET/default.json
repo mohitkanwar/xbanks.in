@@ -1,0 +1,20 @@
+{
+    "data": {
+    "id": 123,
+    "authorities": ["USER"],
+    "password": "",
+    "username": "user",
+    "accountNonExpired": true,
+    "accountNonLocked": true,
+    "credentialsNonExpired": true,
+    "termsAccepted": true,
+    "firstTimePwdReset": true,
+    "enabled": true,
+    "firstName": "First",
+    "lastName": "Last"
+    }
+    ,
+    "status":{
+        "status":"SUCCESS"
+    }
+}
